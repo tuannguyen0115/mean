@@ -1,0 +1,10 @@
+- Create the project (ng new)
+- Create all the components (ng g c ...)
+- Design the HTML layouts for components with dummy data( .html)
+- Set up routing 
+    + App's side (app-routing.module.ts -> app.module.ts)
+- Set up dataService (ng g s data)
+    + Use mockapi to generate dummy data to test
+    + Code step by step the functions in dataService, then connect them to Components
+    + Finish connecting routing to components if possible
+- Code features for components

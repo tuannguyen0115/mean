@@ -1,0 +1,32 @@
+<div class='container'>
+  <h6>Details about {{pet.name}}</h6>
+  <div class='row'>
+    <div class='col-2'>
+      <h6>Pet type:</h6>
+    </div>
+    <div class='col'>{{ pet.type }}</div>
+  </div>
+  <div class='row'>
+    <div class='col-2'>
+      <h6>Description:</h6>
+    </div>
+    <div class='col'>{{ pet.description }}</div>
+  </div>
+  <div class='row'>
+    <div class='col-2'>
+      <h6>Skills:</h6>
+    </div>
+    <div class='col'>
+      <p *ngFor="let skill of pet?.skills">{{ skill }}</p>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-2'>
+      <h6>Likes:</h6>
+    </div>
+    <div class='col'>{{ pet.likes }}</div>
+  </div>
+  <button (click)='isDisabled = onLike()' class='btn btn-primary' [disabled]='isDisabled'>Like this pet</button>
+  <button (click)='onAdopt()' class='btn btn-primary'>Adopt this pet</button>
+
+</div>
